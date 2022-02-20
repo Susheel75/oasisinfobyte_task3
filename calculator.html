@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#outer
+			{
+				height: 430px;
+				width:290px;
+				background:#00f034;
+				border-radius: 30px;
+				margin-top: 50px;
+				padding: 30px 30px 20px 30px;
+			}
+			.row
+			{
+				height: 60px;
+				width: 290px;
+				margin-bottom: 10px;
+				border-radius: 15px;
+			}
+			.col
+			{
+				height: 60px;
+				width: 60px;
+				float: left;
+				background: #cccccc;
+				margin:0px 6px 0px 6px;
+				border-radius: 15px;
+				font-size: 30px;
+				line-height: 60px;
+			}
+			input
+			{
+				border: none;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div id="outer">
+				<form name="form1">
+				<input type="text" name="answer" class="row" style="height: 80px;background: #cccccc;line-height: 150px;font-size: 40px;"/>
+				<div class="row">
+					<input class="col" type = "button" value = "X" onclick = "form1.answer.value += ' ' ">  
+  					<input class="col" type = "button" value = "x2" onclick = "form1.answer.value = pow(form1.answer.value)">  
+  					<input class="col" type = "button" value = "//" onclick = "form1.answer.value += '//' ">  
+  					<input class="col" type = "button" value = "C" onclick = "form1.answer.value = Clear()">
+				</div>
+				<div class="row">
+					<input class="col" type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+  					<input class="col" type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+  					<input class="col" type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+  					<input class="col" type = "button" value = "&#247;" onclick = "form1.answer.value += '/' ">
+				</div>
+				<div class="row">
+					<input class="col" type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+  					<input class="col" type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+  					<input class="col" type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+   					<input class="col" type = "button" value = "*" onclick = "form1.answer.value += '*' ">
+				</div>
+				<div class="row">
+					<input class="col" type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+  					<input class="col" type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+  					<input class="col" type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+   					<input class="col" type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+				</div>
+				<div class="row">
+					<input class="col" type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+  					<input class="col" type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+  					<input class="col" type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+   					<input class="col" type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+				</div>
+				</form>
+			</div>
+		</center>
+	</body>
+</html>
